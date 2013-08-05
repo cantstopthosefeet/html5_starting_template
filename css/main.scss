@@ -1,0 +1,144 @@
+/* =============== Import =============== */
+
+@import "global";
+
+/* =============== Local Variables =============== */
+
+
+
+/* =============== Elements =============== */
+
+body {
+    font-size: 14px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 400;
+    background-color: $white;
+    color: $textColor;
+    line-height: 1.2em;
+    text-align: left;
+}
+div {
+    &.wrapper {
+        width: 90%;
+        margin: 5px auto 10px auto;
+    }
+    &.headerWrapper {
+        width: 100%;
+        margin-bottom: 1em;
+        height: auto;
+    }
+    &#feedback {
+        text-align: center;
+        color: $feedbackColor;
+        font-style: italic;
+        font-weight: 800;
+        border-bottom: solid 1px $textColor;
+    }
+}
+header {
+    border-bottom: solid 3px $black;
+    h1 {
+        font-size: 2em;
+        font-weight: 800;
+        line-height: 2em;
+        margin: 0px;
+        a {
+            &:link, &:visited, &:hover, &:active {
+                color: $black;
+                text-decoration: none;
+            }
+        }
+    }
+    nav {
+        margin-bottom: .2em;
+        font-size: $nav;
+        line-height: $nav;
+        a {
+            &:link, &:visited, &:hover, &:active {
+                margin-right: 1em;
+                padding: .5em 0px .5em 0px;
+                text-decoration: none;
+                color: $black;
+                &.current {
+                    color: $linkColor;
+                }
+            }
+            &:hover {
+                color: $linkColor;
+            }     
+        }
+    }
+}
+footer {
+    text-align: center;
+    padding: 5px 0px 5px 0px;
+    border-top: solid 1px $textColor;
+    font-size: .8em;
+}
+a {
+    &:link, &:visited, &:active, &:hover {
+        color: $linkColor;
+        text-decoration: none;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+p, h1 {
+    margin: 0px 0px .9em 0px;
+}
+h2, h3, h4, h5, h6 {
+    margin: 0px 0px .6em 0px;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+h1 {
+    font-size: $h1;
+    font-weight: 800;
+    line-height: $h1;
+}
+h2 {
+    font-size: $h2;
+    line-height: $h2;
+}
+h3 {
+    font-size: $h3;
+    line-height: $h3;
+}
+h4 {
+    font-size: 1em;
+}
+h5 {
+    font-size: .9em;
+}
+h6 {
+    font-size: .7em;
+}
+small {
+    font-size: .8em;
+}
+em {
+    font-style: italic;
+}
+strong {
+    font-weight: 800;
+}
+ul {
+    margin-left: 17px;
+    list-style-position: outside;
+    list-style-type: disc;
+    line-height: 1.4em;
+    margin-bottom: 1.2em;
+}
+
+/* =============== IDs =============== */
+
+
+
+/* =============== Classes =============== */
+
+.outline {
+    position: absolute;
+    left: -9000px;
+}
